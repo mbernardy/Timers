@@ -1,10 +1,8 @@
 <?php
 /**
- * Created by JetBrains PhpStorm.
  * User: mbernardy
  * Date: 3/15/12
  * Time: 6:37 PM
- * To change this template use File | Settings | File Templates.
  */
 class Timer
 {

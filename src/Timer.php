@@ -45,16 +45,21 @@ class Timer
             return $this->name;
         }
 
-        protected  function getTimes(){
+        public  function getTimes(){
             return $this->times;
         }
+		
+		public function getCount(){
+			return count($this->times);
+		}
 
-        protected function getAverage(){
+        public function getAverage(){
             $total = $this->getTotal();
             return $total / count($this->times);
 
         }
-        protected function getTotal(){
+		
+        public function getTotal(){
             $total = 0.0;
             foreach($this->times as $time){
                 $total += $time;
